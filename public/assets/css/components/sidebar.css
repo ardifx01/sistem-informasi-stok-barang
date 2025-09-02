@@ -1,0 +1,114 @@
+/* Layout dasar */
+.layout {
+    display: flex;
+    min-height: 100svh;
+    background: #f5f7fb;
+    color: #1d2433;
+}
+main.content {
+    flex: 1;
+    padding: 28px;
+}
+header.page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+/* Sidebar */
+aside.sb {
+    width: 270px;
+    background: linear-gradient(180deg, #1e73be 0%, #0d5ba3 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.sb-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 14px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.sb-brand .brand-img {
+    width: min(150px, 72%);
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Nav */
+.sb-nav {
+    padding: 10px 8px;
+    flex: 1;
+    overflow: auto;
+}
+.sb-item .sb-link,
+.sb-item summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: #eaf2ff;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.sb-item .sb-link:hover,
+.sb-item summary:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+.sb-item .sb-link.is-active {
+    background: #fff;
+    color: #0d5ba3;
+    font-weight: 700;
+}
+.sb-item summary::-webkit-details-marker {
+    display: none;
+}
+.sb-item .caret {
+    margin-left: auto;
+    opacity: 0.75;
+    transition: transform 0.2s;
+}
+.sb-item details[open] .caret {
+    transform: rotate(90deg);
+}
+.sb-children {
+    display: grid;
+    margin: 6px 0 6px 8px;
+}
+.sb-children .sb-link {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.sb-footer {
+    padding: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.sb-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.sb-user .bi {
+    font-size: 20px;
+}
+.sb-logout {
+    width: 100%;
+    border: 0;
+    background: #e65c5c;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.sb-logout:hover {
+    filter: brightness(1.05);
+}

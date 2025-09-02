@@ -8,15 +8,18 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();                              // PK
-            $table->string('nama');     
-            $table->string('username')->unique();  // unik biar tak dobel
-            $table->string('password');                // simpan HASH
-            $table->string('role');         // role untuk antara admin atau user
-            $table->rememberToken();                   // untuk "remember me"
+            $table->id();                                    // PK
+            $table->string('nama');                          // Nama lengkap
+            $table->string('username')->unique();            // Username unik
+            $table->string('password');                      // HASH password
+            $table->string('role');                          // Admin|Bendahara Pembantu|Penanggung Jawab
+            $table->rememberToken();                         // "remember me"
             $table->timestamps();
+
+            $table->index('role');
         });
     }
+
     public function down(): void
     {
         Schema::dropIfExists('users');
