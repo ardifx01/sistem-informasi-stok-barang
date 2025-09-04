@@ -113,6 +113,7 @@
   
   /* Tombol ikon mata */
   .field-pass input{ padding-right: 44px; }
+  
   .field-pass .toggle-pass{
     position: absolute;
     right: 12px;
@@ -127,6 +128,21 @@
   }
   .field-pass .toggle-pass:hover{ color: #3a4654; }
   .field-pass .toggle-pass:focus{ outline: none; box-shadow: none; }
+
+  /* Sembunyikan ikon "reveal password" bawaan Edge/IE */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* (Opsional) jaga-jaga varian Chromium Edge lama */
+.field-pass input::-ms-reveal,
+.field-pass input::-ms-clear {
+  display: none;
+}
+
   
   .btn{
     margin-top: 30px;
