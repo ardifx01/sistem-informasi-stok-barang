@@ -33,7 +33,7 @@
             <div class="sb-children">
               @foreach ($it['children'] as $ch)
                 <a href="{{ isset($ch['route']) ? route($ch['route']) : '#' }}"
-                   class="sb-link {{ request()->routeIs($ch['route'] ?? '') ? 'is-active' : '' }}">
+                  class="sb-link {{ request()->routeIs($ch['route'] ?? '') ? 'is-active' : '' }}">
                   <span>{{ $ch['label'] }}</span>
                 </a>
               @endforeach
