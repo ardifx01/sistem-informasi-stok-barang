@@ -9,7 +9,7 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    protected $fillable = ['nama', 'username', 'password', 'role'];
+    protected $fillable = ['nama', 'username', 'password', 'role', 'bagian'];
     protected $hidden = ['password', 'remember_token'];
 
     // Laravel 10/11: cast 'hashed' bikin setiap set string otomatis di-hash
