@@ -7,7 +7,7 @@ use App\Http\Controllers\Pb\DashboardController as PbDashboard;
 use App\Http\Controllers\Pj\DashboardController as PjDashboard;
 
 // ==== Auth ====
-Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::get('/login',  [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'store'])->name('login.attempt');
 Route::post('/logout', [AuthController::class, 'destroy'])->name('logout');
 
