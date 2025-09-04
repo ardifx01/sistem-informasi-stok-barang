@@ -19,7 +19,7 @@ Route::middleware(['auth', 'role:Admin'])->group(function () {
 });
 
 // ==== Pembantu Bendahara (PB) ====
-Route::middleware(['auth', 'role:Pembantu Bendahara'])->group(function () {
+Route::middleware(['auth', 'role:Pengelola Barang'])->group(function () {
     Route::get('/pb', PbDashboard::class)->name('staff.pb.dashboard');
 });
 

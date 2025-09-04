@@ -29,7 +29,7 @@ class AuthController extends Controller
             $role = Auth::user()->role;
             return match ($role) {
                 'Admin'               => to_route('staff.admin.dashboard'),
-                'Pembantu Bendahara'  => to_route('staff.pb.dashboard'),
+                'Pengelola Barang'  => to_route('staff.pb.dashboard'),
                 'Penanggung Jawab'    => to_route(route: 'staff.pj.dashboard'),
                 default               => to_route('login')->withErrors(['username' => 'Role tidak dikenali.'])
             };
@@ -40,6 +40,13 @@ class AuthController extends Controller
             ->onlyInput('username');
     }
 
+    /**
+     * Logout user and regenerate session token
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+/*******  4132569d-a512-49db-a9d5-cf3dd868b83b  *******/
     public function destroy(Request $request)
     {
         Auth::logout();

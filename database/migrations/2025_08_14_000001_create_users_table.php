@@ -12,7 +12,7 @@ return new class extends Migration {
             $table->string('nama');                          // Nama lengkap
             $table->string('username')->unique();            // Username unik
             $table->string('password');                      // HASH password
-            $table->string('role');                          // Admin|Bendahara Pembantu|Penanggung Jawab
+            $table->string('role');                          // Admin|Pengelola Barang|Penanggung Jawab
             $table->rememberToken();                         // "remember me"
             $table->timestamps();
 
