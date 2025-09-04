@@ -32,7 +32,7 @@
     background: var(--panel-blue);         /* biru gelap tipis untuk efek panel */
     border-radius: 16px;
     padding: 16px;                         /* ⇧ padding lebih besar */
-    box-shadow: 0 8px 0 rgba(0,0,0,.06) inset;
+    box-shadow: 0 8px 0 rgba(255, 0, 0, 0.06) inset;
   }
   
   /* Kartu login */
