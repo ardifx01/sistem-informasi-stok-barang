@@ -5,7 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboard;
 use App\Http\Controllers\Pb\DashboardController as PbDashboard;
 use App\Http\Controllers\Pj\DashboardController as PjDashboard;
-    
+
 // ==== Auth ====
 Route::get('/login',  [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'store'])->name('login.attempt');
@@ -15,7 +15,7 @@ Route::redirect('/', '/login');
 
 // ==== Admin ====
 Route::middleware(['auth', 'role:Admin'])->group(function () {
-    Route::get('/user', AdminDashboard::class)->name('staff.admin.dashboard');
+    Route::get('/admin', AdminDashboard::class)->name('staff.admin.dashboard');
 });
 
 // ==== Pembantu Bendahara (PB) ====
