@@ -7,7 +7,7 @@
 
 @push('head')
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('assets/css/components/sidebar.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/components/sidebar.css') }}">
 @endpush
 
 <aside class="sb">
