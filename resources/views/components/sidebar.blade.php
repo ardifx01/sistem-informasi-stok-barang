@@ -52,6 +52,7 @@
       <div class="meta">
         <Text>{{ $user->nama ?? 'Pengguna' }}</Text><Br>
           <hr>
+          <small>{{ $user->role ?? '-' }}</small> 
       </div>
     </div>
 
