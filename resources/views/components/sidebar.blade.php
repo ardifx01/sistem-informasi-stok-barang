@@ -1,6 +1,6 @@
 @props([
   'brand'     => 'Stokita',
-  'brandLogo' => asset('assets/logo_stokita_01.png'), // ← LOGO STOKITA
+  'brandLogo' => asset('assets/banner/sidebar/logo_icon_sidebar.png'), // ← LOGO STOKITA
   'user'      => null,
   'items'     => [],  // [label, route?, icon?, children?]
 ])
