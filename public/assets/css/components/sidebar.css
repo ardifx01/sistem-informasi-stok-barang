@@ -38,10 +38,11 @@ aside.sb {
 
 .sb-brand {
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 16px 14px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .sb-brand .brand-img {
     width: min(150px, 72%);
@@ -117,7 +118,7 @@ aside.sb {
 .sb-user {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 10px;
 }
 .sb-user .bi {
