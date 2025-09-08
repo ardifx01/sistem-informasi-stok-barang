@@ -15,8 +15,8 @@ class DashboardController extends Controller
             ['label' => 'Kelola Barang', 'icon' => 'bi-box', 'children' => [
                 ['label' => 'Gudang ATK',        'icon' => 'bi-grid', 'route' => 'staff.pb.dashboard'],
                 ['label' => 'Gudang B Komputer', 'icon' => 'bi-grid', 'route' => 'staff.pb.dashboard'],
-                ['label' => 'Gudang Kebersihan',  'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
-                ['label' => 'Gudang B Komputer',  'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
+                ['label' => 'Gudang Kebersihan',  'icon' => 'bi-grid', 'route' => 'staff.pb.dashboard'],
+                ['label' => 'Gudang B Komputer',  'icon' => 'bi-grid', 'route' => 'staff.pb.dashboard'],
             ]],
 
             ['label' => 'Riwayat', 'icon' => 'bi-arrow-counterclockwise', 'route' => 'staff.pb.dashboard'],
