@@ -62,7 +62,6 @@ aside.sb {
     padding: 0 20px; /* rapihin padding */
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     padding: 16px 22px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }

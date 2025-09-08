@@ -10,14 +10,13 @@ class DashboardController extends Controller
     {
         // Menu sesuai mockup PJ
         $menu = [
-            ['label' => 'Dashboard', 'icon' => 'bi-grid-3x3-gap', 'route' => 'staff.pj.dashboard'],
+            ['label' => 'Dashboard', 'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
 
-            ['label' => 'Data Keseluruhan', 'icon' => 'bi-file-earmark-spreadsheet', 'children' => [
-                ['label' => 'Gudang ATK',        'icon' => 'bi-grid', 'route' => 'staff.pj.dashboard'],
-                ['label' => 'Gudang B Komputer', 'icon' => 'bi-grid', 'route' => 'staff.pj.dashboard'],
+            ['label' => 'Data Keseluruhan', 'icon' => 'bi-card-list', 'children' => [
+                ['label' => 'Gudang ATK',         'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
+                ['label' => 'Gudang B Komputer',  'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
             ]],
-
-            ['label' => 'Riwayat', 'icon' => 'bi-arrow-counterclockwise', 'route' => 'staff.pj.dashboard'],
+            ['label' => 'Riwayat',        'icon' => 'bi-arrow-counterclockwise', 'route' => 'staff.admin.dashboard'],
         ];
 
         return view('staff.pj.dashboard', compact('menu'));
