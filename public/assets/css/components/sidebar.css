@@ -19,11 +19,19 @@ header.page {
 /* Sidebar */
 aside.sb {
     width: 270px;
-    background: linear-gradient(180deg, #1e73be 0%, #0d5ba3 100%);
-    color: #fff;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 80%, #0f2027 100%);
+    color: white;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100svh;
+    z-index: 999;
 }
+
 .sb-brand {
     display: flex;
     align-items: center;
