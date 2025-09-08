@@ -21,8 +21,13 @@
   {{-- <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}"> --}}
 
   <style>
-    /* fallback kecil untuk kartu konten */
-    .card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+    /* fallback kecil untuk kartu konten yang selamat datang itu */
+    .card{
+      background:#fff;
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 10px 24px rgba(0,0,0,.06)
+    }
   </style>
 </head>
 <body>
