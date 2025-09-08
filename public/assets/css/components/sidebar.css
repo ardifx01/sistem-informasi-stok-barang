@@ -118,7 +118,8 @@ aside.sb {
 .sb-user {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 .sb-user .bi {
