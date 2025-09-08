@@ -10,6 +10,11 @@
 <aside class="sb">
   <div class="sb-brand">
     <img class="brand-img" src="{{ $brandLogo }}" alt="{{ $brand }}" />
+
+    {{-- ikon menu kanan (bootstrap icons) --}}
+    <button class="brand-action" type="button" aria-label="Menu" data-toggle="sidebar">
+      <i class="bi bi-list"></i>
+    </button>
   </div>
 
   <nav class="sb-nav" role="navigation" aria-label="Menu Samping">

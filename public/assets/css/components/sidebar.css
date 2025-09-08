@@ -13,6 +13,9 @@ main.content {
     flex: 1;
     padding: 28px;
 }
+.layout.is-collapsed aside.sb {
+    width: 80px;
+}
 header.page {
     display: flex;
     align-items: center;
@@ -36,20 +39,43 @@ aside.sb {
     z-index: 999;
 }
 
-.sb-brand {
+/* ── Brand: fixed height & compact logo ─────────────────────────── */
+.sb-brand{
+    position: relative;            /* biar tombol absolute nempel rapi */
+    height: 64px;                  /* tinggi area brand */
+    padding: 0 20px;               /* rapihin padding */
     display: flex;
-    padding: 16px 14px 10px;
+    align-items: center;
+    padding: 16px 22px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    width: 60%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 .sb-brand .brand-img {
-    width: min(150px, 72%);
+    width: min(130px, 50%);
     height: auto;
     object-fit: contain;
-    display: block;
-}
+  }
+  
+  /* posisikan ikon menu di kanan, selalu center secara vertikal */
+  .sb-brand .brand-action{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 36px; height: 36px;
+    display: grid; place-items: center;
+    background: transparent; border: 0; border-radius: 10px;
+    color: #fff; cursor: pointer; transition: background .2s;
+  }
+  .sb-brand .brand-action:hover{ background: rgba(255,255,255,.12); }
+  .sb-brand .brand-action .bi{ font-size: 22px; line-height: 1; }
+  
+  /* (opsional) lebih kompak di layar kecil */
+  @media (max-width: 1366px){
+    .sb-brand{ height: 56px; }
+    .sb-brand .brand-img{ height: 24px; max-width: 140px; }
+  }
+  
+
 
 /* Nav */
 .sb-nav {
