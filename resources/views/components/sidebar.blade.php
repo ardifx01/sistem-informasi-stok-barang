@@ -7,7 +7,7 @@
 
 @push('head')
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('assets/css/components/sidebar.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/components/sidebar.css') }}">
 @endpush
 
 <aside class="sb">
@@ -33,7 +33,7 @@
             <div class="sb-children">
               @foreach ($it['children'] as $ch)
                 <a href="{{ isset($ch['route']) ? route($ch['route']) : '#' }}"
-                   class="sb-link {{ request()->routeIs($ch['route'] ?? '') ? 'is-active' : '' }}">
+                  class="sb-link {{ request()->routeIs($ch['route'] ?? '') ? 'is-active' : '' }}">
                   <span>{{ $ch['label'] }}</span>
                 </a>
               @endforeach

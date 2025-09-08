@@ -13,10 +13,12 @@ return new class extends Migration {
             $table->string('username')->unique();            // Username unik
             $table->string('password');                      // HASH password
             $table->string('role');                          // Admin|Pengelola Barang|Penanggung Jawab
+            $table->string('bagian')->nullable();            // ← Bagian/Unit kerja (opsional)
             $table->rememberToken();                         // "remember me"
             $table->timestamps();
 
             $table->index('role');
+            $table->index('bagian');
         });
     }
 
