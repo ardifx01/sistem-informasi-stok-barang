@@ -7,45 +7,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body { background-color: #f5f6f8; font-family: 'Inter', sans-serif; }
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            background: linear-gradient(180deg, #1d75bd, #0b4f91);
-            color: white;
-            position: fixed;
-        }
-        .sidebar a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            border-radius: 8px;
-        }
-        .sidebar a.active, .sidebar a:hover {
-            background: rgba(255,255,255,0.2);
-        }
-        .content {
-            margin-left: 260px;
-            padding: 20px;
-        }
-        .card-summary {
-            border-radius: 15px;
-            background: linear-gradient(180deg, #d7dce2, #a8b0ba);
-            color: #000;
-            text-align: center;
-            min-height: 120px;
-        }
-        .logout-btn {
-            margin-top: auto;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ $title }}</title>
+
+  {{-- Font global --}}
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  {{-- Komponen lain boleh nge-push asset ke <head> --}}
+  @stack('head')
+
+  {{-- (opsional) CSS global app-mu --}}
+  {{-- <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}"> --}}
+
+  <style>
+    /* fallback kecil untuk kartu konten */
+    .card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+  </style>
 </head>
 <body>
 
