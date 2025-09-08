@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Barang;
+use App\Models\JenisBarang;
 
 class DashboardController extends Controller
 {
@@ -24,6 +26,13 @@ class DashboardController extends Controller
             ['label' => 'Data Pengguna',  'icon' => 'bi-people',                 'route' => 'staff.admin.dashboard'],
         ];
 
-        return view('staff.admin.dashboard', compact('menu'));
+        
+        // Ringkasan data
+        $summary = [
+            'totalJenisBarang' => JenisBarang::count(),
+            'totalBarang'      => Barang::count(),
+        ];
+
+        return view('staff.admin.dashboard', compact('menu', 'summary'));
     }
 }
