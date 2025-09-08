@@ -4,6 +4,10 @@
     min-height: 100svh;
     background: #f5f7fb;
     color: #1d2433;
+
+    font-family: "Poppins", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 }
 main.content {
     flex: 1;
