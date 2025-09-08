@@ -55,14 +55,15 @@
     <div class="sb-user">
       <i class="bi bi-person-circle"></i>
       <div class="meta">
-        <strong>{{ $user->nama ?? 'Pengguna' }}</strong>
-        <small>{{ $user->role ?? '-' }}</small>
+        <Text>{{ $user->nama ?? 'Pengguna' }}</Text><Br>
+          <hr>
+          <small>{{ $user->role ?? '-' }}</small> 
       </div>
     </div>
 
     <form method="POST" action="{{ route('logout') }}">
       @csrf
-      <button class="sb-logout" type="submit"><i class="bi bi-box-arrow-right"></i> Logout</button>
+      <button class="sb-logout" type="submit"></i> Logout</button>
     </form>
   </div>
 </aside>
