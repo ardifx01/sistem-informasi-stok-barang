@@ -12,6 +12,7 @@
 
   {{-- Font global --}}
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  
 
   {{-- Komponen lain boleh nge-push asset ke <head> --}}
   @stack('head')
