@@ -12,7 +12,7 @@ class DashboardController extends Controller
     {
         // Menu sesuai mockup Admin
         $menu = [
-            ['label' => 'Dashboard', 'icon' => 'bi-grid-3x3-gap', 'route' => 'staff.admin.dashboard'],
+            ['label' => 'Dashboard', 'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
 
             ['label' => 'Data Keseluruhan', 'icon' => 'bi-file-earmark-spreadsheet', 'children' => [
                 ['label' => 'Gudang ATK',         'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
