@@ -14,7 +14,7 @@ class DashboardController extends Controller
         $menu = [
             ['label' => 'Dashboard', 'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
 
-            ['label' => 'Data Keseluruhan', 'icon' => 'bi-file-earmark-spreadsheet', 'children' => [
+            ['label' => 'Data Keseluruhan', 'icon' => 'bi-card-list', 'children' => [
                 ['label' => 'Gudang ATK',         'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
                 ['label' => 'Gudang Listrik',     'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
                 ['label' => 'Gudang Kebersihan',  'icon' => 'bi-grid', 'route' => 'staff.admin.dashboard'],
@@ -22,8 +22,8 @@ class DashboardController extends Controller
             ]],
 
             ['label' => 'Riwayat',        'icon' => 'bi-arrow-counterclockwise', 'route' => 'staff.admin.dashboard'],
-            ['label' => 'Laporan',        'icon' => 'bi-receipt',                'route' => 'staff.admin.dashboard'],
-            ['label' => 'Data Pengguna',  'icon' => 'bi-people',                 'route' => 'staff.admin.dashboard'],
+            ['label' => 'Laporan',        'icon' => 'bi-file-earmark-bar-graph-fill', 'route' => 'staff.admin.dashboard'],
+            ['label' => 'Data Pengguna',  'icon' => 'bi-people', 'route' => 'staff.admin.dashboard'],
         ];
         
         // Ringkasan data
