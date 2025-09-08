@@ -14,14 +14,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
   {{-- Komponen lain boleh nge-push asset ke <head> --}}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('assets/css/components/sidebar.css') }}">
 
   {{-- (opsional) CSS global app-mu --}}
   {{-- <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}"> --}}
 
   <style>
-    /* fallback kecil untuk kartu konten */
-    .card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
+    /* fallback kecil untuk kartu konten yang selamat datang itu */
+    .card{
+      background:#fff;
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 10px 24px rgba(0,0,0,.06)
+    }
   </style>
 </head>
 <body>
