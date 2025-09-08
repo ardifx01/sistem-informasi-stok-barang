@@ -25,7 +25,6 @@ class DashboardController extends Controller
             ['label' => 'Laporan',        'icon' => 'bi-receipt',                'route' => 'staff.admin.dashboard'],
             ['label' => 'Data Pengguna',  'icon' => 'bi-people',                 'route' => 'staff.admin.dashboard'],
         ];
-
         
         // Ringkasan data
         $summary = [

@@ -1,6 +1,7 @@
 @props([
   'title' => 'Stokita',
-  'menu'  => [],  // array menu dari controller
+  'menu'  => [],
+  'summary' => [], // ← tambahin props summary
 ])
 
 <!DOCTYPE html>
